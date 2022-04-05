@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+   <children>
+      <VBox layoutX="-1.0" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="loginSchermLabel" text="Loginscherm">
+                     <font>
+                        <Font size="48.0" />
+                     </font>
+                     <padding>
+                        <Insets left="170.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="199.0" prefWidth="600.0">
+               <children>
+                  <Label fx:id="loginLabel" text="Login als:">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="120.0" top="100.0" />
+                     </HBox.margin></Label>
+                  <ComboBox fx:id="loginComboBox" prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets left="50.0" top="105.0" />
+                     </HBox.margin>
+                  </ComboBox>
+                  <Button fx:id="loginButton" mnemonicParsing="false" onAction="#login" text="Login">
+                     <HBox.margin>
+                        <Insets left="30.0" top="105.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
